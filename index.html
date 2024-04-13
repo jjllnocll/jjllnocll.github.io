@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лавка чародея</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <div class="header-container">
+                <img src="./assets/images/logo.png" alt="">
+                <div class="menu">
+                    <a href="">Товары</a>
+                    <a href="">Новинки</a>
+                    <a href="">О нас</a>
+                </div>
+                <div class="burger">
+                    <img src="./assets/images/burger.svg">
+                </div>
+                <div class="tovkorzina">
+                    <img src="https://i.pinimg.com/736x/8b/8d/98/8b8d98e28309855b36aea06fead63e80.jpg" alt="">
+                </div>
+                <div class="korzina">
+                    <div class="krest">
+                        <img src="./assets/images/free-icon-close-cross-in-circular-outlined-interface-button-58253 (1).png"
+                            alt="">
+                    </div>
+                    <h2></h2>
+                    <span></span>
+                    <div class="korz-tov"></div>
+                    <div class="korz-stoim-title"></div>
+                    <div class="korzina-buttom">
+                        <div class="korz-stoim-header"></div>
+                        <div class="korz-zakaz"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="mobile-menu" class="mobile-menu">
+        <img src="./assets/images/logo.png">
+        <div class="menu">
+            <h2 class="menu_element">О нас</h2>
+            <h2 class="menu_element">Новинки</h2>
+            <h2 class="menu_element">Товары</h2>
+            <h2 class="menu_element">Мастерская</h2>
+            <h2 class="menu_element">+7(999)999-99-99</h2>
+            <div class="cross">
+                <img src="./assets/images/free-icon-close-cross-in-circular-outlined-interface-button-58253 (1).png">
+            </div>
+        </div>
+        <img class="icons-burger" src="https://cdn-icons-png.flaticon.com/512/1384/1384021.png">
+        <img class="icons-burger"
+            src="data:image/png;base64,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">
+        <img class="icons-burger"
+            src="data:image/png;base64,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">
+    </div>
+
+    <div id="mainbanner">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="mainbanner-wrapper swiper-slide">
+                        <div class="left-side">
+                            <img class="mainbanner-img" src="./assets/images/banner/item.png" alt="">
+                            <!-- <img class="mainbanner-img" src="./assets/images/banner/item.png" alt=""> -->
+                            <!-- <img class="mainbanner-img" src="./assets/images/banner/item.png" alt=""> -->
+                            <!-- <img class="mainbanner-img" src="./assets/images/banner/item.png" alt=""> -->
+                        </div>
+                        <div class="right-side">
+                            <h2 class="mainbanner-title">Магия в Лавке Чародея</h2>
+                            <span class="mainbanner-subtitle">Лучшие магические товары во всем мире.
+                                По низким ценам. Для детей и их родителей скидки!</span>
+                            <a class="more-btn btn">Продукция</a>
+
+                            <div class="buttons">
+                                <div class="btn-left swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none">
+                                        <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="#6B6B8A" />
+                                        <path d="M15.5995 24L12.3422 20M12.3422 20L15.5995 16M12.3422 20L27 20"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-right swiper-button-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none">
+                                        <circle cx="20" cy="20" r="20" fill="#6B6B8A" />
+                                        <path d="M24.4005 16L27.6578 20M27.6578 20L24.4005 24M27.6578 20H13"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainbanner-wrapper swiper-slide">
+                        <div class="left-side">
+                            <img class="mainbanner-img" src="./assets/images/banner/item.png" alt="">
+                            <!-- <img class="mainbanner-img" src="./assets/images/banner/item.png" alt=""> -->
+                            <!-- <img class="mainbanner-img" src="./assets/images/banner/item.png" alt=""> -->
+                            <!-- <img class="mainbanner-img" src="./assets/images/banner/item.png" alt=""> -->
+                        </div>
+                        <div class="right-side">
+                            <h2 class="mainbanner-title">Магия в Лавке Чародея</h2>
+                            <span class="mainbanner-subtitle">Лучшие магические товары во всем мире.
+                                По низким ценам. Для детей и их родителей скидки!</span>
+                            <a class="more-btn btn">Продукция</a>
+
+                            <div class="buttons">
+                                <div class="btn-left swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none">
+                                        <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="#6B6B8A" />
+                                        <path d="M15.5995 24L12.3422 20M12.3422 20L15.5995 16M12.3422 20L27 20"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="btn-right swiper-button-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none">
+                                        <circle cx="20" cy="20" r="20" fill="#6B6B8A" />
+                                        <path d="M24.4005 16L27.6578 20M27.6578 20L24.4005 24M27.6578 20H13"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products-block">
+        <div class="container">
+            <div class="products-block__header">
+                <div class="products-block__title">Товары Чародея</div>
+                <div class="products-block__tabs">
+                    <div class="products-block__tab active">Кристаллы</div>
+                    <div class="products-block__tab">Украшения</div>
+                    <div class="products-block__tab">Палочки</div>
+                </div>
+            </div>
+
+
+            <div class="products-block__wrapper active">
+
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03.png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Адамантит</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (1).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Розовый кристалл</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (4).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Обсидиан счастья</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (5).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Сапфир исцеления</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (6).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Мистифрил</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/item.png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Ледяной дракоша</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-block__wrapper">
+
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03.png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Адамантит</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (1).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Розовый кристалл</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (4).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Обсидиан счастья</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (5).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Сапфир исцеления</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (6).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Мистифрил</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/item.png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Ледяной дракоша</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-block__wrapper">
+
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03.png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Адамантит</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (1).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Розовый кристалл</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (4).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Обсидиан счастья</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (5).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Сапфир исцеления</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/03 (6).png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Мистифрил</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+                <div class="products-block__card">
+                    <img class="card__card" src="./assets/images/products/item.png" alt="">
+                    <div class="card__container">
+                        <span class="card__subtitle">Кристалл</span>
+                        <h3 class="card__title">Ледяной дракоша</h3>
+                        <span class="card__description">Ваша информация о товаре</span>
+                        <span class="card__price">16 500 руб</span>
+                        <div class="card__button">В корзину</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="seo-block">
+        <div class="container">
+            <div class="seo-block__content">
+                <div class="seo-block__head">
+                    <img src="./assets/images/seo/Star 2.svg" alt="" srcset="">
+                    <h2 class="seo__title">Новая коллекция волшебных палочек</h2>
+                </div>
+                <div class="seo__text">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым
+                    свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных
+                    рациональных ограничений.
+                    Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую
+                    востребованность направлений прогрессивного развития.
+                </div>
+                <div class="seo__button">Ознакомиться
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacts-block">
+        <div class="container">
+            <div class="contacts-block__wrapper">
+                <div class="contacts-block__left">
+                    <img src="../lavka/assets/images/contacts.block/Group 210.png" class="contacts-block__img">
+                </div>
+                <div class="contacts-block__right">
+                    <div class="contacts-block__title"></div>
+                    <h2 class="contacts-block__title">Мои помошники</h2>
+                    <div class="contacts-block__desc"></div>
+                    <span class="contacts-block__desc">Значимость этих проблем настолько очевидна, что базовый
+                        вектор
+                        развития позволяет оценить значение экспериментов, поражающих по своей масштабности и
+                        грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким
+                        активом.</span>
+                    <div class="contacts-block__icon-wrapper"></div>
+                    <div class="contacts-block__icon">
+                        <img src="../lavka/assets/images/contacts.block/Ellipse 30.png" alt="">
+                        <img src="../lavka/assets/images/contacts.block/Ellipse 31.png" alt="">
+                        <img src="../lavka/assets/images/contacts.block/Ellipse 32.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <img src="./assets/images/logo.png">
+                    <h2>+7(999)999-99-99</h2>
+                    <p>Мастерская</p>
+                </div>
+                <div class="footer__cat">
+                    <span class="footer__cat-name">Товары</span>
+                    <span class="footer__cat-item">Кристаллы</span>
+                    <span class="footer__cat-item">Палочки</span>
+                    <span class="footer__cat-item">О нас</span>
+                </div>
+                <div class="footer__menu">
+                    <span class="footer__cat-name">О нас</span>
+                    <span class="footer__cat-item">Производители</span>
+                    <span class="footer__cat-item">Помошники</span>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__icons">
+                        <img class="icon1" src="https://cdn-icons-png.flaticon.com/512/1384/1384021.png">
+                        <img class="icon2"
+                            src="data:image/png;base64,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">
+                        <img class="icon3"
+                            src="data:image/png;base64,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">
+                    </div>
+                    <div class="footer__name">
+                        <h3>Лавка Чародея</h3>
+                    </div>
+                    <div class="footer__copiright">
+                        <h3>All rights reserved</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
