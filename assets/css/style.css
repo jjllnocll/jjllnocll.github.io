@@ -10,6 +10,8 @@
     /* ÐŸÑƒÑ‚ÑŒ Ð´Ð¾ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° Ð² Ð¿Ð°Ð¿ÐºÐµ ÑÐ°Ð¹Ñ‚Ð° */
 }
 
+@media (max-width: 900px) {}
+
 .tovkorzina>img {
     display: flex;
     width: 60px;
@@ -186,6 +188,7 @@ body {
 
 /* ÐÐÐ¡Ð¢Ð ÐžÐ™ÐšÐ˜ Ð¨ÐÐŸÐšÐ˜ */
 #header {
+    flex-wrap: wrap;
     background: #E1EDE6;
     position: relative;
     /*ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ - Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð°Ñ*/
@@ -337,6 +340,7 @@ body {
 .products-block__wrapper {
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     gap: 30px;
 }
 
@@ -433,6 +437,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .products-block__tab {
