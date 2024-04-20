@@ -10,7 +10,82 @@
     /* ÐŸÑƒÑ‚ÑŒ Ð´Ð¾ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° Ð² Ð¿Ð°Ð¿ÐºÐµ ÑÐ°Ð¹Ñ‚Ð° */
 }
 
+.tovkorzina>img {
+    display: flex;
+    width: 60px;
+}
 
+.korz-zakaz {
+    position: absolute;
+    font-size: 30px;
+    border: solid 1px #000;
+    padding: 16px;
+    right: 50px;
+    bottom: 25px;
+}
+
+.korzina-buttom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.korz-stoim-title {
+    margin-top: 18px;
+    font-size: 30px;
+}
+
+.korz-stoim-border {
+    border: solid 1px #000;
+    width: 270px;
+    height: 55px;
+}
+
+.korz-tov {
+    border: solid 1px #000;
+    width: 610px;
+    height: 170px;
+}
+
+.korzina>span {
+    font-size: 30px;
+}
+
+.krest>img {
+    width: 60px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.korzina>h2 {
+    font-size: 30px;
+    border: solid 1px #000;
+    padding: 10px;
+    width: 220px;
+}
+
+.korzina {
+    width: 100%;
+    height: 450px;
+    max-width: 650px;
+    background: #E1EDE6;
+    border: solid 1px #000;
+    position: fixed;
+    right: 0;
+    top: 120px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+
+    transition: all 0.5s ease-in-out;
+    transform: translateX(100%);
+}
+
+.korzina.active {
+    transform: none;
+}
 
 .cross>img {
     width: 20px;

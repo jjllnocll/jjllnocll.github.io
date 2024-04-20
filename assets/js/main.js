@@ -57,3 +57,12 @@ var korzina = document.querySelector('.korzina');
 var tovkorzina = document.querySelector('.tovkorzina');
 var krest = document.querySelector('.krest');
 
+tovkorzina.addEventListener('click', () => {
+  korzina.classList.toggle('active');
+});
+
+krest.addEventListener('click', () => {
+  tovkorzina.classList.remove('active');
+  korzina.classList.remove('active');
+});
+
